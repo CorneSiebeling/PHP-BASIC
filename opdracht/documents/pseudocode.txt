@@ -1,1 +1,19 @@
+een website met een home en product pagina
 
+een menu en footer op beide pagina's
+
+De volgende elementen moeten terug komen in de code: variabelen, datatype, string operators, indexed array
+
+Op de homepagina (index.php) moet je het datatype van een ingevoerde waarde kunnen opvragen.
+
+Op de producten (producten.php) moet je een lijst van 10 producten en hun prijs laten zien
+
+Als de klant jonger is dan 16 is dan krijgt hij 1 euro korting op de totaalprijs.
+
+Als de klant 19 is dan krijgt hij 19 cent korting
+
+Als de klant 18 is dan krijgt hij 18 cent korting
+
+Als de klant 17 is dan krijgt hij 17 cent korting
+
+Als de klant 16 is dan krijgt hij 16 cent korting
