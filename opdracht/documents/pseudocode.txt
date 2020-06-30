@@ -1,19 +1,77 @@
-een website met een home en product pagina
+pseudocode voor index.php
 
-een menu en footer op beide pagina's
+<form action="index.php" method="get">
 
-De volgende elementen moeten terug komen in de code: variabelen, datatype, string operators, indexed array
+    <p>Op deze website kun je checken welk datatype je hebt ingevoerd.</p>
+    <P>Vul hieronder een getal, een decimaal, een tekst of de tekst true/false in en klik op check!</p> 
 
-Op de homepagina (index.php) moet je het datatype van een ingevoerde waarde kunnen opvragen.
+    <input type="text" name="input">
+    <button type="submit" name="submit">Check</button>
 
-Op de producten (producten.php) moet je een lijst van 10 producten en hun prijs laten zien
+    <p>Het datatype van de waarde: 
+      <?function inputVeldCheck()
+        {
 
-Als de klant jonger is dan 16 is dan krijgt hij 1 euro korting op de totaalprijs.
+      Hier in deze fucntie check in de waarde die eerder wordt in gevuld in het input veld.
+      ik verwerk de input zodat ik de juiste vorm van input op het scherm kan tonen dus of het een getal is, een decimaal, een tekst of de tekst true/false
+      
+      } ?>
+      
+      </p>
 
-Als de klant 19 is dan krijgt hij 19 cent korting
+    </form>
 
-Als de klant 18 is dan krijgt hij 18 cent korting
+pseudocode voor producten.php
 
-Als de klant 17 is dan krijgt hij 17 cent korting
+<form action="producten.php" method="get">
 
-Als de klant 16 is dan krijgt hij 16 cent korting
+    <p>Hieronder een lijst met producten die je bij ons kunt bestellen en de prijs per stuk:</p>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>#</th>
+                <th>#</th>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+            </tr>
+            <tr>
+                <td>#</td>
+                <td>#</td>
+                <td>#</td>
+            </tr>
+        </table>
+
+    <p>Vul hieronder het productnummer in van het product wat je wilt bestellen en de hoeveelheid.</p> 
+    <p><label>productnummer: </label><input type="text" name="productnummer"> &nbsp;&nbsp;<label>aantal: </label><input type="text" name="aantal"></p>
+    
+    <p>Vul je leeftijd in voor korting</p>
+    <p><label>leeftijd: </label><input type="text" name="leeftijd"></p>
+    <p><button type="submit" name="submit">Bereken totaal</button></p>
+    
+    <p>voor 
+    <?php function getAmount()
+        {
+            $aantalProd = $_GET['aantal'] ?? 'vul een aantal in!';
+            echo $aantalProd;
+            hier haal ik op wat de gebruiker heeft ingevuld als waarde van hoeveel producten (appels of peren). zodat ik dat kan gebruiken bij de volgende functies.
+        } ?> 
+        x het product: 
+        <?php function getProductNr()
+        {
+            $productnummer = $_GET['productnummer'] ?? 'vul een productnummer in!';
+            echo $productnummer;
+        } ?> 
+        betaal je:</p>
+        <p>je bent 
+        <?php function getAge()
+        {
+            $leeftijd = $_GET['leeftijd'] ?? 'vul een leeftijd in!';
+            echo $leeftijd;
+        } ?> 
+
+    je korting is: </p>
+
+    </form>
